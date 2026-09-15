@@ -1,8 +1,8 @@
 # Haidar System — Brand Foundation
 
-**Version:** 1.0  
-**Status:** Foundational / v1  
-**Purpose:** Source of truth for the Haidar System personal brand.
+**Version:** 1.1  
+**Status:** Foundational / v1.1  
+**Purpose:** Source of truth for the Haidar System personal brand and its future public web system.
 
 ---
 
@@ -85,7 +85,6 @@ Experiments are allowed to fail. The learning should improve the next decision.
 The capability territory is intentionally modular.
 
 ### A. Business Systems
-
 - Internal dashboards
 - CRM and workflow systems
 - Operations tools
@@ -93,7 +92,6 @@ The capability territory is intentionally modular.
 - Lightweight management systems
 
 ### B. AI Systems
-
 - AI-assisted workflows
 - Agents and operator systems
 - Research and decision support
@@ -101,7 +99,6 @@ The capability territory is intentionally modular.
 - AI-powered business processes
 
 ### C. Automation & Integration
-
 - API integrations
 - Webhooks
 - Workflow automation
@@ -109,7 +106,6 @@ The capability territory is intentionally modular.
 - Cloud and deployment automation
 
 ### D. Web & Digital Interfaces
-
 - Websites
 - Landing pages
 - Web applications
@@ -117,7 +113,6 @@ The capability territory is intentionally modular.
 - Customer-facing digital experiences
 
 ### E. Intelligence & Opportunity Systems
-
 - Demand discovery
 - Opportunity databases
 - Research pipelines
@@ -135,23 +130,10 @@ Web3, blockchain, and other emerging technologies may be explored when they solv
 
 Primary audiences:
 
-### 5.1 Small businesses / UMKM
-
-Businesses that need practical digitalization without unnecessary enterprise complexity.
-
-### 5.2 Organizations and institutions
-
-Organizations that need structured workflows, information systems, communication systems, or operational tools.
-
-### 5.3 Founders / operators
-
-People with a real workflow, market problem, or opportunity who need a system to make execution easier.
-
-### 5.4 Individuals with valuable workflows
-
-Professionals or creators who repeatedly perform manual research, administration, sales, content, or operational tasks.
-
-### Audience qualification principle
+- Small businesses / UMKM
+- Organizations and institutions
+- Founders / operators
+- Individuals with valuable repeatable workflows
 
 A good fit is defined more by the **problem and willingness to act** than by industry.
 
@@ -159,48 +141,20 @@ A good fit is defined more by the **problem and willingness to act** than by ind
 
 ## 6. Content Pillars
 
-Content should demonstrate the brand rather than become generic motivational posting.
+1. **Systems Thinking** — workflows, data, decisions, and actions.
+2. **Building in Public** — experiments, architecture, prototypes, failures, lessons.
+3. **AI & Automation** — useful AI, agents, APIs, automation, integrations.
+4. **Demand & Opportunity** — requests, validation, opportunity discovery, prioritization.
+5. **Project Proof** — problem, approach, system, result, lesson.
+6. **Technology Experiments** — emerging technology with a clear learning or problem-solving purpose.
 
-### Pillar 1 — Systems Thinking
-
-Explain how problems can be decomposed into workflows, data, decisions, and actions.
-
-### Pillar 2 — Building in Public
-
-Show experiments, architecture, prototypes, implementation decisions, failures, and lessons.
-
-### Pillar 3 — AI & Automation
-
-Show practical applications of AI, agents, APIs, automation, and integrations.
-
-### Pillar 4 — Demand & Opportunity
-
-Explore how to find real requests, validate demand, identify opportunities, and decide what is worth building.
-
-### Pillar 5 — Project Proof
-
-Present finished or in-progress work with context: problem, approach, system, result, and lesson.
-
-### Pillar 6 — Technology Experiments
-
-Explore Web3, new infrastructure, tools, and emerging technology when there is a clear learning or problem-solving purpose.
-
-### Content rule
-
-Every post should primarily do at least one of these:
-
-- Teach something.
-- Show evidence.
-- Explain a decision.
-- Reveal a useful process.
-- Document a meaningful experiment.
-- Start a relevant conversation.
+Every post should primarily teach, show evidence, explain a decision, reveal a useful process, document a meaningful experiment, or start a relevant conversation.
 
 ---
 
 ## 7. Visual Direction
 
-### Desired character
+Desired character:
 
 - Technical
 - Calm
@@ -210,89 +164,46 @@ Every post should primarily do at least one of these:
 - Experimental but credible
 - Minimal rather than noisy
 
-### Visual language
+Prefer diagrams, system maps, interfaces, architecture fragments, screenshots, structured typography, and clean technical compositions.
 
-Use diagrams, system maps, interfaces, architecture fragments, screenshots, structured typography, and clean technical compositions.
-
-Avoid making the brand look like a generic AI-content account full of stock AI imagery or exaggerated “future tech” graphics.
-
-### Design principle
-
-**Clarity before decoration.**
-
-The visual identity should make the viewer feel that there is a system behind the work.
+> **Clarity before decoration.**
 
 ---
 
 ## 8. Bio Direction
 
-Recommended primary bio direction:
+Recommended primary bio:
 
 > **Building practical digital systems.**  
 > AI • Automation • Software • Systems  
 > Exploring real problems → useful solutions.
 
-Alternative positioning for a more operator-focused version:
-
-> **Systems for real-world problems.**  
-> AI • Automation • Software • Research  
-> Building, testing, learning in public.
-
-The final Instagram bio should be selected after the profile structure and first content batch are prepared.
-
 ---
 
 ## 9. Profile Structure
 
-The Instagram account should communicate the brand in seconds.
-
-### Profile identity
-
 **Name:** Haidar System  
-**Handle:** `@haidarsystemhq`  
-**Category:** Choose the closest available professional/technology category without overclaiming.
+**Handle:** `@haidarsystemhq`
 
-### Profile hierarchy
+Suggested pinned posts:
 
-1. Who this is.
-2. What Haidar System does.
-3. What kinds of problems it explores/builds.
-4. Proof through posts/projects.
-5. Clear contact/action path when an offer is active.
-
-### Suggested pinned posts
-
-**Pinned 01 — Start Here**
-
-What Haidar System is and why it exists.
-
-**Pinned 02 — What I Build**
-
-Clear map of capabilities.
-
-**Pinned 03 — How I Work**
-
-Problem → validation → system → execution → learning.
-
-Projects can replace these later only when there is stronger proof.
+1. **Start Here** — what Haidar System is and why it exists.
+2. **What I Build** — capability map.
+3. **How I Work** — problem → validation → system → execution → learning.
 
 ---
 
 ## 10. Posting System
 
-The publishing system must be sustainable for one person.
-
-### Weekly baseline
-
 Aim for **3 meaningful posts per week**, not daily posting for its own sake.
 
 Suggested rhythm:
 
-- **Post A:** System / insight.
-- **Post B:** Build / experiment.
-- **Post C:** Proof / lesson / opportunity.
+- Post A: System / insight.
+- Post B: Build / experiment.
+- Post C: Proof / lesson / opportunity.
 
-### Content production loop
+Production loop:
 
 1. Capture an observation.
 2. Identify the underlying problem.
@@ -300,15 +211,7 @@ Suggested rhythm:
 4. Add evidence or an example.
 5. Publish simply.
 6. Record reactions/questions.
-7. Use useful feedback to shape the next build or post.
-
-### Avoid
-
-- Posting only motivational quotes.
-- Pretending experiments are products.
-- Making every post a sales pitch.
-- Chasing every technology trend.
-- Inflating metrics or client history.
+7. Feed useful feedback into the next build or post.
 
 ---
 
@@ -318,18 +221,14 @@ Projects belong under the brand as **evidence**.
 
 Every project should be presented using:
 
-1. **Problem** — what needed solving?
-2. **Demand / reason** — why was it worth solving?
-3. **System** — what was built?
-4. **Implementation** — how did it work?
-5. **Result** — what changed or was learned?
-6. **Next step** — what remains uncertain?
+1. Problem
+2. Demand / reason
+3. System
+4. Implementation
+5. Result
+6. Next step
 
-This prevents the portfolio from becoming a list of technology names.
-
-### Project maturity labels
-
-Use honest labels:
+Maturity labels:
 
 - Idea
 - Research
@@ -343,29 +242,7 @@ Use honest labels:
 
 ---
 
-## 12. Brand Scope Rules
-
-A topic belongs on Haidar System when at least one is true:
-
-- It relates to building useful systems.
-- It demonstrates a relevant capability.
-- It documents a real experiment.
-- It reveals a useful problem or opportunity.
-- It contributes to the long-term operator identity.
-
-A topic should stay out when it is:
-
-- Purely unrelated personal content.
-- Trend-chasing with no connection to the brand.
-- A technical demo with no meaningful context.
-- An exaggerated claim.
-- A project that creates confusion about what Haidar System actually stands for.
-
----
-
-## 13. Brand Architecture
-
-The relationship should be:
+## 12. Brand Architecture
 
 ```text
 HAIDAR SYSTEM
@@ -383,11 +260,109 @@ Personal operating brand
 
 A project does not need its own brand/account until there is a strategic reason to separate it.
 
-This prevents premature fragmentation into many brands and accounts.
+---
+
+## 13. Public Web System — New Direction
+
+The documents should **not remain only as passive documentation**.
+
+Haidar System should become a lightweight public web system that turns the repository's structured knowledge into a living public interface.
+
+### The website is not a replacement for the docs.
+
+The architecture is:
+
+```text
+GitHub Markdown / structured content
+                ↓
+        Content / knowledge layer
+                ↓
+      Haidar System Web Interface
+                ↓
+   Visitor understanding + discovery
+                ↓
+      Contact / opportunity / proof
+```
+
+### First web version
+
+Build a **Brand OS / public system hub**, not a complex SaaS application.
+
+Core pages:
+
+- `/` — Home / positioning
+- `/build` — What Haidar System builds
+- `/projects` — project proof and experiments
+- `/thinking` — notes, systems thinking, research
+- `/about` — who is behind the system
+- `/contact` — work / collaboration / opportunity
+
+Optional later modules:
+
+- `/opportunities` — selected public opportunities or validated demand patterns
+- `/lab` — experiments and emerging technology
+- `/now` — current focus
+
+### Core website behavior
+
+A visitor should be able to:
+
+1. Understand Haidar System within seconds.
+2. Explore what is being built.
+3. See evidence instead of generic claims.
+4. Understand the thinking behind the work.
+5. Discover how to contact or collaborate.
+
+### Content model
+
+Each project/experiment should have structured fields such as:
+
+```text
+Project
+├── title
+├── status
+├── problem
+├── demand_reason
+├── system
+├── technology
+├── result
+├── lesson
+├── links
+└── updated_at
+```
+
+The website should render this structure consistently.
+
+### Important constraint
+
+Do not build authentication, complex dashboards, payment systems, multi-user management, or a large database merely to make the site feel like a “system.”
+
+The first system should be **content-driven, proof-driven, and maintainable**.
 
 ---
 
-## 14. Decision Filter
+## 14. Public Web vs Internal Management
+
+There are two different needs:
+
+### Public layer
+
+A website that communicates the brand, capabilities, thinking, projects, and proof.
+
+### Private layer
+
+A future internal operator/dashboard for managing opportunities, leads, content, projects, and execution.
+
+They should not be confused.
+
+**Now:** build the public layer.  
+**Later:** build the private layer only when real operational volume justifies it.
+
+GitHub/Markdown remains the source of truth for the current stage.
+
+---
+
+## 15. Decision Filter
 
 Before building or publishing under Haidar System, ask:
 
@@ -401,15 +376,15 @@ If the answer is weak across the board, do not automatically build it.
 
 ---
 
-## 15. Strategic Direction
+## 16. Strategic Direction
 
 The long-term direction is:
 
 **Demand Intelligence → Opportunity Database → Scoring → Action**
 
-This is not a requirement that every Haidar System project implement the same architecture. It is the strategic lens for moving from technology-first building toward opportunity-first execution.
+This is the strategic lens for moving from technology-first building toward opportunity-first execution.
 
-The brand should therefore document the transition from:
+The brand should move from:
 
 > **“I can build this.”**
 
@@ -419,28 +394,31 @@ toward:
 
 ---
 
-## 16. Current Stage
+## 17. Current Stage
 
-Haidar System is currently in **Brand Foundation / Validation stage**.
+Haidar System is currently in **Brand Foundation → Public Systemization → Validation**.
 
 Priority order:
 
-1. Establish brand identity.
-2. Establish consistent public communication.
-3. Observe audience response and real demand.
-4. Identify promising opportunities.
-5. Build only where evidence justifies the effort.
-6. Turn successful work into stronger proof.
+1. Lock the brand foundation.
+2. Turn the foundation into a usable public website.
+3. Establish consistent public communication.
+4. Observe audience response and real demand.
+5. Identify promising opportunities.
+6. Build deeper systems only where evidence justifies the effort.
+7. Turn successful work into stronger proof.
 
-No dedicated personal management app is required at this stage. Documentation is the operating layer until complexity justifies software.
+### Current implementation principle
+
+> **Do not build a management app. Build the public Brand System.**
+
+The website is the first real interface of Haidar System; the GitHub docs remain its source of truth.
 
 ---
 
-## 17. Source of Truth Rule
+## 18. Source of Truth Rule
 
-When future projects, content, or business ideas conflict with this document, do not blindly follow either the old plan or the new idea.
-
-Review the decision against:
+When future projects, content, or business ideas conflict with this document, review the decision against:
 
 **Problem → Demand → Fit → Simplicity → Evidence → Action.**
 
