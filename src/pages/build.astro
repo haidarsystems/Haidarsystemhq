@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const items = ['Business Systems','AI Systems','Automation & Integration','Web & Digital Interfaces','Intelligence & Opportunity Systems','Emerging Technology'];
+---
+<BaseLayout title="What I Build — Haidar System">
+<section class="wrap page"><p class="eyebrow">CAPABILITIES</p><h1>Useful systems, not technology for its own sake.</h1><p class="intro">I work across software, AI, automation, integrations, and digital interfaces when they help solve a concrete problem.</p><div class="list">{items.map((x,i)=><article><span>0{i+1}</span><h2>{x}</h2><p>Explore, design, and implement a practical workflow around the actual need.</p></article>)}</div></section>
+</BaseLayout>
+<style>.wrap{max-width:1180px;margin:auto;padding:0 28px}.page{padding-top:90px;padding-bottom:100px}.eyebrow{font-size:.72rem;letter-spacing:.16em;font-weight:700;color:#73736d}h1{font-size:clamp(3rem,7vw,6rem);line-height:.98;letter-spacing:-.06em;max-width:900px;margin:0}.intro{font-size:1.15rem;color:#666;max-width:650px;margin:30px 0 70px}.list{border-top:1px solid #d8d8d2}.list article{display:grid;grid-template-columns:70px 1.2fr 1fr;gap:20px;padding:28px 0;border-bottom:1px solid #d8d8d2}.list span{color:#888}.list h2{margin:0;font-size:1.3rem}.list p{margin:0;color:#666}@media(max-width:700px){.list article{grid-template-columns:40px 1fr}.list p{grid-column:2}}
+</style>
