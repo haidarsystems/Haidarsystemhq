@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const capabilities = ['Business Systems','AI Systems','Automation & Integration','Web & Digital Interfaces','Intelligence & Opportunity Systems','Emerging Technology'];
+const projects = [
+  { name: 'Haidar System', status: 'Active', text: 'A public operating brand for exploring, documenting, and proving practical digital systems.' },
+  { name: 'Runner OS', status: 'Experiment', text: 'An execution and safety-oriented system for turning structured intent into reliable actions.' },
+  { name: 'QIMA / RQBL', status: 'Paused', text: 'A Qur’an ecosystem platform exploration, currently paused while opportunity and fit are reassessed.' }
+];
+---
+<BaseLayout>
+  <section class="hero wrap">
+    <p class="eyebrow">PERSONAL OPERATING BRAND · 2026</p>
+    <h1>Building practical digital systems for <em>real-world problems.</em></h1>
+    <p class="lead">I explore problems, validate opportunities, design systems, and build practical solutions across AI, software, automation, and emerging technology.</p>
+    <div class="actions"><a class="button" href="/projects">Explore the work →</a><a href="/about">How I work</a></div>
+  </section>
+
+  <section class="band wrap">
+    <div><p class="eyebrow">CURRENT FOCUS</p><h2>Demand before unnecessary building.</h2></div>
+    <p>Demand Intelligence → Opportunity Database → Scoring → Action. The goal is simple: find real problems first, then build what deserves to exist.</p>
+  </section>
+
+  <section class="wrap section"><p class="eyebrow">CAPABILITIES</p><h2>What I build</h2><div class="grid">{capabilities.map((item, i) => <article><span>0{i + 1}</span><h3>{item}</h3><p>Practical systems designed around a real workflow, constraint, or opportunity.</p></article>)}</div></section>
+
+  <section class="wrap section"><div class="section-head"><div><p class="eyebrow">PROJECT PROOF</p><h2>Selected work</h2></div><a href="/projects">View all →</a></div><div class="projects">{projects.map(project => <article class="project"><div class="status">{project.status}</div><h3>{project.name}</h3><p>{project.text}</p><a href="/projects">View project →</a></article>)}</div></section>
+
+  <section class="wrap section thinking"><p class="eyebrow">THE OPERATING LOOP</p><h2>Think → Research → Build → Document → Publish → Learn</h2><p>Haidar System is intentionally built in public. Projects are evidence, experiments are learning, and content is part of the operating system.</p></section>
+
+  <section class="cta wrap"><div><p class="eyebrow">START A CONVERSATION</p><h2>Have a real problem worth turning into a system?</h2></div><a class="button" href="/contact">Get in touch →</a></section>
+</BaseLayout>
+<style>
+  .wrap { max-width:1180px; margin:auto; padding-left:28px; padding-right:28px; }
+  .hero { padding-top:110px; padding-bottom:100px; max-width:1180px; }
+  .eyebrow { font-size:.72rem; letter-spacing:.16em; font-weight:700; color:#73736d; margin:0 0 18px; }
+  h1 { max-width:900px; font-size:clamp(3rem,7vw,6.8rem); line-height:.98; letter-spacing:-.06em; margin:0; font-weight:750; }
+  h1 em { font-style:normal; color:#6c6c65; }
+  .lead { max-width:680px; font-size:1.18rem; color:#5d5d57; margin:34px 0; }
+  .actions { display:flex; gap:25px; align-items:center; font-weight:650; }
+  .button { display:inline-block; background:#171717; color:#fff; padding:13px 18px; border-radius:2px; }
+  .band { border-top:1px solid #d8d8d2; border-bottom:1px solid #d8d8d2; padding-top:55px; padding-bottom:55px; display:grid; grid-template-columns:1fr 1fr; gap:70px; }
+  h2 { font-size:clamp(2rem,4vw,3.8rem); line-height:1.05; letter-spacing:-.04em; margin:0; }
+  .band p:last-child,.thinking p:last-child { color:#5d5d57; max-width:560px; font-size:1.05rem; margin:10px 0 0; }
+  .section { padding-top:90px; padding-bottom:30px; }
+  .grid,.projects { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:#d8d8d2; margin-top:35px; }
+  .grid article,.project { background:#f5f5f2; padding:28px; min-height:190px; }
+  article span { color:#85857e; font-size:.75rem; }
+  h3 { margin:22px 0 8px; font-size:1.2rem; }
+  article p { color:#666; font-size:.9rem; margin:0; }
+  .section-head { display:flex; justify-content:space-between; align-items:end; }
+  .project { min-height:240px; }
+  .status { font-size:.68rem; text-transform:uppercase; letter-spacing:.12em; border:1px solid #bcbcb5; display:inline-block; padding:4px 7px; }
+  .project h3 { font-size:1.45rem; }
+  .project a { display:inline-block; margin-top:25px; font-size:.85rem; font-weight:700; }
+  .thinking { padding-bottom:100px; }
+  .cta { border-top:1px solid #d8d8d2; padding-top:65px; padding-bottom:100px; display:flex; justify-content:space-between; align-items:end; gap:30px; }
+  .cta h2 { max-width:700px; }
+  @media(max-width:800px){ .hero{padding-top:75px}.band,.grid,.projects{grid-template-columns:1fr}.cta{flex-direction:column;align-items:flex-start}.section-head{align-items:flex-start;gap:20px;flex-direction:column} }
+</style>
