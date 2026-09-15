@@ -1,0 +1,21 @@
+---
+interface Props {
+  slug: string;
+  title: string;
+  summary: string;
+  tags: string[];
+  date: Date;
+  headingLevel?: 'h2' | 'h3';
+}
+
+const { slug, title, summary, tags, date, headingLevel = 'h2' } = Astro.props;
+const Heading = headingLevel;
+---
+<article class="note-card">
+  <div class="tag-list">{tags.map((tag) => <span class="tag">{tag}</span>)}</div>
+  <div>
+    <Heading><a href={`/thinking/${slug}/`}>{title}</a></Heading>
+    <p>{summary}</p>
+  </div>
+  <time class="meta" datetime={date.toISOString()}>{date.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: '2-digit' })}</time>
+</article>

@@ -1,9 +1,17 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-const projects=[['Haidar System','Active','The public operating brand and system hub.'],['Runner OS','Experiment','Execution, safety, and recovery patterns for reliable action.'],['QIMA / RQBL','Paused','A Qur’an ecosystem platform exploration, paused for opportunity reassessment.']];
+import ProjectCard from '../../components/ProjectCard.astro';
+
+const projects = (await getCollection('projects')).sort((a, b) => b.data.updated_at.valueOf() - a.data.updated_at.valueOf());
 ---
-<BaseLayout title="Projects — Haidar System">
-<section class="wrap page"><p class="eyebrow">PROJECT PROOF</p><h1>Work is evidence.</h1><p class="intro">Projects are shown by maturity, problem, system, implementation, and lessons learned—not by inflated claims.</p><div class="projects">{projects.map(p=><article><div class="status">{p[1]}</div><h2>{p[0]}</h2><p>{p[2]}</p><a href="/contact">Discuss →</a></article>)}</div></section>
+<BaseLayout title="Projects — Haidar System" description="Project proof from Haidar System, with clear maturity, problems, implementation, results, and lessons.">
+  <section class="wrap page" aria-labelledby="projects-title">
+    <p class="eyebrow">Project proof</p>
+    <h1 class="page-title" id="projects-title">Work is evidence.</h1>
+    <p class="lead">Projects are shown by maturity, problem, system, implementation, and lessons learned—not by inflated claims. An experiment remains an experiment; an unknown result remains unknown.</p>
+    <div class="project-grid" style="margin-top: 4rem">
+      {projects.map(({ data }) => <ProjectCard slug={data.slug} name={data.name} status={data.status} summary={data.summary} />)}
+    </div>
+  </section>
 </BaseLayout>
-<style>.wrap{max-width:1180px;margin:auto;padding:0 28px}.page{padding-top:90px;padding-bottom:100px}.eyebrow{font-size:.72rem;letter-spacing:.16em;font-weight:700;color:#73736d}h1{font-size:clamp(3rem,7vw,6rem);line-height:.98;letter-spacing:-.06em;margin:0}.intro{max-width:650px;color:#666;font-size:1.1rem;margin:30px 0 65px}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d8d8d2}.projects article{background:#f5f5f2;padding:30px;min-height:300px}.status{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid #bbb;padding:4px 7px;display:inline-block}.projects h2{font-size:1.5rem;margin:55px 0 10px}.projects p{color:#666}.projects a{display:block;margin-top:35px;font-weight:700;font-size:.85rem}@media(max-width:800px){.projects{grid-template-columns:1fr}}
-</style>

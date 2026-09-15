@@ -1,0 +1,18 @@
+---
+interface Props {
+  slug: string;
+  name: string;
+  status: string;
+  summary: string;
+  headingLevel?: 'h2' | 'h3';
+}
+
+const { slug, name, status, summary, headingLevel = 'h2' } = Astro.props;
+const Heading = headingLevel;
+---
+<article class="project-card">
+  <span class="status">{status}</span>
+  <Heading>{name}</Heading>
+  <p>{summary}</p>
+  <a class="text-link" href={`/projects/${slug}/`} aria-label={`View evidence for ${name}`}>View evidence →</a>
+</article>

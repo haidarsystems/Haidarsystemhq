@@ -1,0 +1,28 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const notes = await getCollection('thinking', ({ data }) => data.status === 'published');
+  return notes.map((note) => ({ params: { slug: note.data.slug }, props: { note } }));
+}
+
+const { note } = Astro.props;
+const { Content } = await render(note);
+const { data } = note;
+---
+<BaseLayout title={`${data.title} — Thinking — Haidar System`} description={data.summary} type="article">
+  <article class="wrap page">
+    <a class="back-link text-link" href="/thinking/">← All notes</a>
+    <header>
+      <p class="eyebrow">Thinking</p>
+      <h1 class="page-title">{data.title}</h1>
+      <p class="lead">{data.summary}</p>
+      <div class="article-meta">
+        <div class="tag-list">{data.tags.map((tag: string) => <span class="tag">{tag}</span>)}</div>
+        <time class="meta" datetime={data.updated_at.toISOString()}>{data.updated_at.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: '2-digit' })}</time>
+      </div>
+    </header>
+    <div class="prose"><Content /></div>
+  </article>
+</BaseLayout>

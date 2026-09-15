@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+.dev.vars
+
+# Cloudflare local state
+.wrangler/
+
+# Logs and process files
+*.log
+pids/
+*.pid
+*.pid.lock
+.pm2/
+
+# Editor and operating system
+.DS_Store
+.vscode/
+.idea/
+
+# Backups
+*.backup
+*.bak
+*.tar.gz
+*.zip

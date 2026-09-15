@@ -1,9 +1,18 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-const notes=[['Demand before building','Why real demand should shape what gets built.','Systems'],['Evidence over claims','A project becomes useful proof when its problem, decisions, and outcome are visible.','Proof'],['From tools to systems','Moving from isolated tools toward repeatable operating workflows.','Systems']];
+import NoteCard from '../../components/NoteCard.astro';
+
+const notes = (await getCollection('thinking', ({ data }) => data.status === 'published'))
+  .sort((a, b) => b.data.updated_at.valueOf() - a.data.updated_at.valueOf());
 ---
-<BaseLayout title="Thinking — Haidar System">
-<section class="wrap page"><p class="eyebrow">THINKING</p><h1>Notes from building in public.</h1><p class="intro">Short working ideas about systems, demand, AI, automation, and the lessons that emerge from experiments.</p><div class="notes">{notes.map(n=><article><span>{n[2]}</span><h2>{n[0]}</h2><p>{n[1]}</p></article>)}</div></section>
+<BaseLayout title="Thinking — Haidar System" description="Working notes about systems thinking, demand validation, AI, automation, experiments, and practical build decisions.">
+  <section class="wrap page" aria-labelledby="thinking-title">
+    <p class="eyebrow">Thinking</p>
+    <h1 class="page-title" id="thinking-title">Notes from building in public.</h1>
+    <p class="lead">Short working ideas about systems, demand, AI, automation, and lessons from experiments. Notes are structured content, so the reasoning layer can grow without changing route logic.</p>
+    <div class="note-list" style="margin-top: 4rem">
+      {notes.map(({ data }) => <NoteCard slug={data.slug} title={data.title} summary={data.summary} tags={data.tags} date={data.updated_at} />)}
+    </div>
+  </section>
 </BaseLayout>
-<style>.wrap{max-width:1180px;margin:auto;padding:0 28px}.page{padding-top:90px;padding-bottom:100px}.eyebrow{font-size:.72rem;letter-spacing:.16em;font-weight:700;color:#73736d}h1{font-size:clamp(3rem,7vw,6rem);line-height:.98;letter-spacing:-.06em;margin:0}.intro{max-width:650px;color:#666;font-size:1.1rem;margin:30px 0 65px}.notes{border-top:1px solid #d8d8d2}.notes article{padding:30px 0;border-bottom:1px solid #d8d8d2}.notes span{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#888}.notes h2{font-size:1.6rem;margin:14px 0 7px}.notes p{color:#666;margin:0}
-</style>
