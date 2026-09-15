@@ -79,11 +79,12 @@ The build output is written to `dist/`.
 
 ## Deployment
 
-- **Target:** Cloudflare Pages
+- **Target:** Cloudflare Pages (BYOK)
+- **Production:** https://webapp-2-49t.pages.dev
 - **Build command:** `npm run build`
 - **Output directory:** `dist`
 - **Production branch:** `main`
-- **Status:** Deployment URL is recorded here only after a successful verified deploy.
+- **Status:** Active and verified on 2026-09-15.
 
 ## Not yet implemented
 
