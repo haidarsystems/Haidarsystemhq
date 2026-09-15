@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const notes=[['Demand before building','Why real demand should shape what gets built.','Systems'],['Evidence over claims','A project becomes useful proof when its problem, decisions, and outcome are visible.','Proof'],['From tools to systems','Moving from isolated tools toward repeatable operating workflows.','Systems']];
+---
+<BaseLayout title="Thinking — Haidar System">
+<section class="wrap page"><p class="eyebrow">THINKING</p><h1>Notes from building in public.</h1><p class="intro">Short working ideas about systems, demand, AI, automation, and the lessons that emerge from experiments.</p><div class="notes">{notes.map(n=><article><span>{n[2]}</span><h2>{n[0]}</h2><p>{n[1]}</p></article>)}</div></section>
+</BaseLayout>
+<style>.wrap{max-width:1180px;margin:auto;padding:0 28px}.page{padding-top:90px;padding-bottom:100px}.eyebrow{font-size:.72rem;letter-spacing:.16em;font-weight:700;color:#73736d}h1{font-size:clamp(3rem,7vw,6rem);line-height:.98;letter-spacing:-.06em;margin:0}.intro{max-width:650px;color:#666;font-size:1.1rem;margin:30px 0 65px}.notes{border-top:1px solid #d8d8d2}.notes article{padding:30px 0;border-bottom:1px solid #d8d8d2}.notes span{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#888}.notes h2{font-size:1.6rem;margin:14px 0 7px}.notes p{color:#666;margin:0}
+</style>
